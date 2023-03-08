@@ -1,0 +1,98 @@
+body{
+    background: #ccc;
+    font-family: 'roboto condesed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.button__ul{
+    position: absolute;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} 
+.button__ul, .button__li{
+    list-style: none;
+    margin: 0 5px;
+}
+.button__ul, .button__li, .button__href, .fa{
+    line-height: 80px;
+     transition: 0.5s;
+     padding-right: 14px;
+     font-size: 40px;
+     color: #262626;
+ }
+ 
+ .button__ul, .button__li, .button__href {
+     display:block;
+     padding-left: 20px;
+     text-decoration: none;
+     transition:.5s;
+     width:210px;
+     display:absolute;
+     text-align:left;
+     box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+     transform: rotate(0deg) skew(0deg) translate(0,0);
+     height:80px;
+     background: #fff;
+   }
+
+   .button__ul, .button__li, .button__href, .button__span{
+    transition: 0.5s;
+    padding: 0;
+    margin: 0;
+    top: 30px;
+    color: #262626;
+    letter-spacing: 4px;
+    position: absolute;
+}
+
+  .button__ul, .button__li, .button__href:after {
+    transform: .5s;
+    content: '';
+    position: absolute;
+    bottom:-20px;
+    height:20px;
+    width:100%;
+    background: #b1b1b1;
+    left:-10px;
+    transform: rotate(0deg) skewX(-45deg);
+  }
+
+
+  .button__ul, .button__li, .button__href:before {
+    content: '';
+    background: #b1b1b1;
+    top:10px;
+    position: absolute;
+    transform: .5s;
+    left:-20px;
+    height:100%;
+    width:20px;                                                                                   
+    transform: rotate(0deg) skewY(-45deg);
+  }
+
+  .button__ul, .button__li, .button__href:hover{
+      transform: rotate(0deg) skew(0deg) translate(20px, -15px);
+      box-shadow: -50px 50px 50px rgba(0,0,0,.5);
+  }
+ 
+  .button__ul, .button__li:hover .fa{
+color: #fff;
+  }
+  .button__ul, .button__li, .button__href:hover .button__span{
+      color: #fff;
+  }
+
+  .button__ul, .button__li:hover:nth-child(1) .button__href{
+    background: #3b5998;
+}
+.button__ul, .button__li:hover:nth-child(1) .button__href::after{
+  background: #4a69ad;
+}
+.button__ul, .button__li:hover:nth-child(1) .button__href::before{
+    background: #365492;
+}
+
