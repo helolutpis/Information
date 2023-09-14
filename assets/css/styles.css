@@ -462,12 +462,16 @@ img {
 .skills__bar {
   background-color: var(--first-color-lighter);
 }
+.skills__bar {
+  display: none;
+}
+
 .skills__percentage {
   display: block;
   background-color: var(--first-color);
 }
 .skills__html {
-  width: 70%;
+  width: 60%;
 }
 .skills__js {
   width: 60%;
@@ -479,10 +483,16 @@ img {
   width: 80%;
 }
 .skills__ae {
-  width: 75%;
+  width: 80%;
 }
 .skills__ph {
+  width: 80%;
+}
+.skills__animator {
   width: 60%;
+}
+.skills__modeller {
+  width: 40%;
 }
 .skills__close .skills__list {
   height: 0;
