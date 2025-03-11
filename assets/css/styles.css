@@ -1352,3 +1352,9 @@ background: var(--first-color-lighter);
 .button__ulsize .button__lisize .button__hrefsize{
   width: 210px;
 }
+.qualification{
+  display: none;
+}
+.instagram_section{
+  display: none;
+}
